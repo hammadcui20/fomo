@@ -1,0 +1,10 @@
+<Stack.Screen name="SplashScreen" component={SplashScreen} />
+          <Stack.Screen name="Preference" component={Preference} />
+          
+          <Stack.Screen name="soldTickets" component={soldTickets} />
+          <Stack.Screen name="wallet" component={wallet} />
+          <Stack.Screen name="eventDetail2" component={eventDetail2} />
+          <Stack.Screen name="history" component={history} />
+          <Stack.Screen name="withdrawl" component={withdrawl} />
+          <Stack.Screen name="addBank" component={addBank} />
+          <Stack.Screen name="PaymentScreen" component={stripePayment} />

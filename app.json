@@ -4,24 +4,52 @@
     "slug": "fomo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo-rounded-2.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/logo-rounded-2.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FF4459"
     },
-    "ios": {
-      "supportsTablet": true
+   "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+      "CFBundleURLTypes": [
+        {
+          "CFBundleURLSchemes": ["com.googleusercontent.apps.1091146074355-ijp5oifauoqr06ou6c2ga5q0v8qeevfd"]
+        }
+      ]
+    }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/logo-rounded-2.png",
+        "backgroundColor": "#FF4459"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCcFx_90zwi6oVR8DDcuEG7Z0xSxyl-8Kg"
+        }
+      },
+      "package": "com.bakir0349.fomo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "530644ae-cd14-4550-9dd2-66d75e908da7"
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ]
   }
 }
